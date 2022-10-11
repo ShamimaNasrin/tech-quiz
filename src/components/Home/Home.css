@@ -1,17 +1,3 @@
-/* .h-container {
-    width: 100%;
-    height: 88vh;
-    background: url(../../images/exam.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    filter: brightness(65%);
-    object-position: top;
-    object-fit: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  } */
 
   .h-container{
     background: url(../../images/exam.jpg);

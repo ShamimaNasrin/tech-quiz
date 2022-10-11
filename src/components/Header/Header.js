@@ -7,6 +7,7 @@ const Header = () => {
     return (
         <div>
         
+        {/* navbar start */}
             <Navbar bg="dark" variant='dark' expand="lg">
                 <Container >
                     <Navbar.Brand href="#">TechQuiz</Navbar.Brand>
@@ -27,6 +28,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            {/* navbar end */}
 
         </div>
     );

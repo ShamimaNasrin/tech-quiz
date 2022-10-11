@@ -23,5 +23,30 @@
     opacity: 0.9;
     position: absolute;
   }
+  /* Topics section */
+  .topic-container {
+    margin: 100px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 47px;
+    justify-items: center;
+    border: none;
+  }
+
+
+/* Responsiveness for tablet */
+@media screen and (min-width: 690px) and (max-width:1133px) {
+  .topic-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+  /* Responsiveness for mobile */
+@media screen and (max-width:689px) {
+  .topic-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
 
   

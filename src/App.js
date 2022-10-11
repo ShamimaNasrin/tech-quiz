@@ -17,23 +17,29 @@ function App() {
       children: [
         {
           path: '/',
-          element: <Home></Home>  
+          loader: () => {
+            // fetch('https://openapi.programming-hero.com/api/quiz')
+            //   .then(res => res.json())
+            //   .then(data => console.log(data.data));
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
+          element: <Home></Home>
         },
-        
+
         {
           path: 'statistics',
-          
+
           element: <Statistics></Statistics>
         },
         {
           path: '/blog',
-           element: <Blog></Blog>
+          element: <Blog></Blog>
         },
         {
           path: '/about',
-           element: <About></About>
+          element: <About></About>
         }
-        
+
       ]
     },
     {

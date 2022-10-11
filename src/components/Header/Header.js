@@ -6,8 +6,8 @@ import './Header.css';
 const Header = () => {
     return (
         <div>
-        
-        {/* navbar start */}
+
+            {/* navbar start */}
             <Navbar bg="dark" variant='dark' expand="lg">
                 <Container >
                     <Navbar.Brand href="#">TechQuiz</Navbar.Brand>

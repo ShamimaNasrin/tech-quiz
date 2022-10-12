@@ -36,7 +36,7 @@ function App() {
           element: <Blog></Blog>
         },
         {
-          path: '/about',
+          path: '/aboutt',
           element: <About></About>
         },
 

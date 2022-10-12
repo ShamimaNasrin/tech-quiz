@@ -2,6 +2,8 @@ import React from 'react';
 import './Questions.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 const Questions = ({ ques }) => {
@@ -9,7 +11,8 @@ const Questions = ({ ques }) => {
     ///console.log(ques);
 
     const eyeHandler = id => {
-        console.log(correctAnswer);
+        //console.log(correctAnswer);
+        toast(correctAnswer);
     }
     return (
         <div>
@@ -23,6 +26,7 @@ const Questions = ({ ques }) => {
                 }
 
                 <FontAwesomeIcon onClick={() => eyeHandler(id)} className='eye-icon' icon={faEye}></FontAwesomeIcon>
+                <ToastContainer />
             </div>
 
         </div>

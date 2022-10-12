@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Topic.css';
 
 const Topic = ({topic}) => {
-    const {name, logo, total} = topic;
+    const {name, logo, total, id} = topic;
     return (
         <div className='topic'>
             <div className="card">
@@ -14,9 +15,9 @@ const Topic = ({topic}) => {
                     <p><small>Q:{total}</small></p>
                    
                     {/* <button onClick={() => handleAddToCart(workoutName)}  */}
-                        <button className='btn-start'>
-                            Start Quiz
-                        </button>
+                        <Link to="/quiz">
+                        <button className='btn-start'>Start Quiz</button>
+                        </Link>
                     
                 </div>
             </div>

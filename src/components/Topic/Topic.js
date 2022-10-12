@@ -14,8 +14,9 @@ const Topic = ({topic}) => {
                     <p className='text'>{name}</p>
                     <p><small>Q:{total}</small></p>
                    
-                    {/* <button onClick={() => handleAddToCart(workoutName)}  */}
-                        <Link to="/quiz">
+                    
+                    {/* <Link to={`/friend/${id}`}>{username}</Link> */}
+                        <Link to={`/quiz/${id}`}>
                         <button className='btn-start'>Start Quiz</button>
                         </Link>
                     

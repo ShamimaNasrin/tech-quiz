@@ -1,16 +1,29 @@
-.ques-card{
+.ques-card {
     max-width: 80%;
     margin: 40px auto;
     padding: 20px;
     box-shadow: 1px 7px 8px 8px rgba(183, 183, 183, 0.2);
+    border-radius: 8px;
 }
-.option-div{
+
+.quiz-question {
+    margin: 20px 10px 35px;
+    text-align: left;
+}
+
+.option-div {
     width: 75%;
     margin: 10px auto;
     padding: 10px;
     border: 2px solid gray;
     text-align: start;
+    border-radius: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
-.option-p{
+
+.option-p {
     padding-left: 5px;
+    margin: 0;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Questions.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
@@ -16,28 +16,28 @@ const Questions = ({ ques }) => {
     }
     const radioBtnHandler = (option) => {
         //console.log(option);
-        if(option === correctAnswer){
+        if (option === correctAnswer) {
             toast('Correct Answer!');
         }
-        else{
+        else {
             toast('Wrong Answer!');
         }
-      
+
     }
     return (
         <div>
             <div className="ques-card">
-                <h4>Quiz: {question}</h4>
+                <h4 className='quiz-question'>Quiz: {question}</h4>
 
                 {
                     options.map(option => <div className='option-div'>
 
-                        <input onClick={ () => radioBtnHandler(option)} type="radio" id="quiz" name="option" value="Quiz" />
+                        <input onClick={() => radioBtnHandler(option)} type="radio" id="quiz" name="option" value="Quiz" />
                         <label for="quiz"><p className='option-p'>{option}</p></label>
                     </div>)
                 }
 
-                <FontAwesomeIcon onClick={ eyeHandler} className='eye-icon' icon={faEye}></FontAwesomeIcon>
+                <FontAwesomeIcon onClick={eyeHandler} className='eye-icon' icon={faEye}></FontAwesomeIcon>
                 <ToastContainer />
             </div>
 

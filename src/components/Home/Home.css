@@ -1,37 +1,39 @@
+.h-container {
+  background: url(../../images/exam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  color: white;
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .h-container{
-    background: url(../../images/exam.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover; 
-    color: white;
-    position: relative;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
 
-  }
-  .text-div{
-    z-index: 1;
-  }
-  .color-overlay{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    position: absolute;
-  }
-  /* Topics section */
-  .topic-container {
-    margin: 100px 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 47px;
-    justify-items: center;
-    border: none;
-  }
+.text-div {
+  z-index: 1;
+}
+
+.color-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+}
+
+/* Topics section */
+.topic-container {
+  margin: 100px 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 47px;
+  justify-items: center;
+  border: none;
+}
 
 
 /* Responsiveness for tablet */
@@ -41,12 +43,10 @@
   }
 }
 
-  /* Responsiveness for mobile */
+/* Responsiveness for mobile */
 @media screen and (max-width:689px) {
   .topic-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
 }
-
-  

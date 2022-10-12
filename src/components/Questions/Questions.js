@@ -39,6 +39,8 @@ const Questions = ({ ques }) => {
 
                 <FontAwesomeIcon onClick={eyeHandler} className='eye-icon' icon={faEye}></FontAwesomeIcon>
                 <ToastContainer />
+
+                <p className='text-danger mt-4 mb-3'>Note: please click on radio button</p>
             </div>
 
         </div>

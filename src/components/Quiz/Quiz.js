@@ -13,8 +13,7 @@ const Quiz = () => {
     return (
         <div className='my-5 pt-3'>
             <h2>Quiz of {name}</h2>
-            <p className='text-danger my-3'>Note: please click on radio button</p>
-
+            
             {
                 questions.map(ques => <Questions
                     ques={ques}>

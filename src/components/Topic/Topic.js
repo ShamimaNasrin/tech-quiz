@@ -11,11 +11,13 @@ const Topic = ({topic}) => {
                 </div>
                 <div className='topic-conatiner'>
                     <p className='text'>{name}</p>
-                    <div className='btn-div'>
-                        {/* <button onClick={() => handleAddToCart(workoutName)} className='btn-add'>
-                            <p className='btn-text'>Add activity</p>
-                        </button> */}
-                    </div>
+                    <p><small>Q:{total}</small></p>
+                   
+                    {/* <button onClick={() => handleAddToCart(workoutName)}  */}
+                        <button className='btn-start'>
+                            Start Quiz
+                        </button>
+                    
                 </div>
             </div>
         </div>

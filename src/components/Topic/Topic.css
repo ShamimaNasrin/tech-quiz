@@ -28,7 +28,8 @@
 .topic-conatiner {
     margin: 10px 14px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -38,32 +39,15 @@
     font-size: 19px;
 }
 
-.btn-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    margin: 10px auto 0px auto;
-
-}
-
-.btn-add {
-    padding: 10px 5px;
+.btn-start {
+    padding: 5px 10px;
     color: white;
-    background: rgb(71, 71, 71);
-    border: none;
-    border-radius: 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-text {
-    margin-top: 0;
-}
-
-.btn-add:hover {
     background-color: rgb(47, 47, 47);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-start:hover {
+    background-color: rgb(63, 63, 63);
 }

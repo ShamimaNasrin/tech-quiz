@@ -26,11 +26,11 @@ const Home = () => {
 
 
             <div className='container'>
-            <div className='topic-container'>
+                <div className='topic-container'>
                     {
                         topics.map(topic => <Topic
-                        key={topic.id}
-                        topic={topic}></Topic> )
+                            key={topic.id}
+                            topic={topic}></Topic>)
                     }
                 </div>
             </div>

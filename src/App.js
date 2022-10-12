@@ -39,12 +39,12 @@ function App() {
           path: '/about',
           element: <About></About>
         },
-        
+
         {
           path: '/quiz/:quizId',
-          loader: async ({params}) =>{
+          loader: async ({ params }) => {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
-          }, 
+          },
           element: <Quiz></Quiz>
         }
 
@@ -53,7 +53,7 @@ function App() {
     {
       path: '*', element: <h5>page not found: 404</h5>
     }
-    
+
   ]);
   return (
     <div className="App">

@@ -1,0 +1,13 @@
+.ques-card{
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 1px 7px 8px 8px rgba(183, 183, 183, 0.2);
+}
+.option-div{
+    width: 75%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid gray;
+
+}

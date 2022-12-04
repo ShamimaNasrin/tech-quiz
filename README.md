@@ -1,5 +1,5 @@
 # Tech Quiz
-## Tech Quiz is an online assessment platform to test the basic knowledge of some web development topics.
+## Tech Quiz is an online assessment platform to test the basic knowledge of some web development technologies.
 
 ## Live preview
 [https://idyllic-rugelach-8e9860.netlify.app/]
